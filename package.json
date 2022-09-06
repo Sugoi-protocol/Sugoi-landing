@@ -1,7 +1,7 @@
 {
-  "name": "@polywrap/landing-page",
+  "name": "@sugoi/landing-page",
   "version": "0.1.0",
-  "homepage": "https://polywrap.io/",
+  "homepage": "www.gosugoi.xyz",
   "scripts": {
     "start": "serve -s build",
     "dev": "react-scripts start",
