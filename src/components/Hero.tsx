@@ -11,7 +11,7 @@ import { EmailForm } from './EmailForm';
 import KeyboardArrowRightOutlined from '@material-ui/icons/KeyboardArrowRightOutlined';
 import { Parallax } from 'react-scroll-parallax';
 import { makeStyles } from '@material-ui/core/styles';
-import { polywrapPalette } from '../theme';
+import { sugoiPalette } from '../theme';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -95,13 +95,13 @@ const useStyles = makeStyles((theme) => ({
   heroSignupSuccess: {
     backgroundColor: theme.palette.primary.dark,
     borderRadius: 8,
-    boxShadow: `0 8px 16px ${polywrapPalette.secondary[900]}88`,
+    boxShadow: `0 8px 16px ${sugoiPalette.secondary[900]}88`,
     fontWeight: 700,
     padding: 8,
     width: '100%',
   },
   technicalPreview: {
-    color: polywrapPalette.secondary.end,
+    color: sugoiPalette.secondary.end,
     fontWeight: 700,
     letterSpacing: 1.5,
     textTransform: 'uppercase',
@@ -229,7 +229,7 @@ export const Hero = () => {
             <img
               className={classes.heroPolywrapper}
               src={process.env.PUBLIC_URL + '/imgs/polywrapper-hero.png'}
-              alt='Polywrap Logo'
+              alt='Sugoi Logo'
             />
           </Parallax>
         </Box>

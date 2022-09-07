@@ -5,7 +5,7 @@ import { CTA } from '../constants/verbiage';
 import KeyboardArrowRightOutlined from '@material-ui/icons/KeyboardArrowRightOutlined';
 import ReactGA from 'react-ga';
 import { makeStyles } from '@material-ui/core/styles';
-import { polywrapPalette } from '../theme';
+import { sugoiPalette } from '../theme';
 import { useState } from 'react';
 
 const useStyles = makeStyles((theme) => ({
@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
   heroSignupSuccess: {
     backgroundColor: theme.palette.primary.dark,
     borderRadius: 8,
-    boxShadow: `0 8px 16px ${polywrapPalette.secondary[900]}88`,
+    boxShadow: `0 8px 16px ${sugoiPalette.secondary[900]}88`,
     fontWeight: 700,
     padding: 8,
     width: '100%',

@@ -1,6 +1,6 @@
 import { Parallax } from 'react-scroll-parallax';
 import { Box, Grid, makeStyles, Typography, useMediaQuery, useTheme } from '@material-ui/core';
-import { polywrapPalette } from '../theme';
+import { sugoiPalette } from '../theme';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
     zIndex: 0,
   },
   container: {
-    backgroundColor: polywrapPalette.secondary[1000],
+    backgroundColor: sugoiPalette.secondary[1000],
     borderRadius: 8,
     boxShadow: `0 64px 96px -24px rgba(0,0,0,0.5)`,
     padding: 72,
@@ -39,14 +39,14 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   hubWireframeImg: {
-    boxShadow: `0 4px 64px ${polywrapPalette.primary.mid}85`,
+    boxShadow: `0 4px 64px ${sugoiPalette.primary.mid}85`,
     borderRadius: 4,
     transformOrigin: 'top left',
     transform: `translateY(-8px)`,
     maxHeight: '400px',
     maxWidth: '100%',
     [theme.breakpoints.down('sm')]: {
-      boxShadow: `0 4px 32px ${polywrapPalette.primary.mid}85`,
+      boxShadow: `0 4px 32px ${sugoiPalette.primary.mid}85`,
       width: '100%',
       transform: 'none',
     },

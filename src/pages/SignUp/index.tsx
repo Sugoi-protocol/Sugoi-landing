@@ -10,7 +10,7 @@ import {
 import { EmailForm } from '../../components/EmailForm';
 import KeyboardArrowRightOutlined from '@material-ui/icons/KeyboardArrowRightOutlined'
 import { makeStyles } from '@material-ui/core/styles';
-import { polywrapPalette } from '../../theme';
+import { sugoiPalette } from '../../theme';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
     }
   },
   technicalPreview: {
-    color: polywrapPalette.secondary.end,
+    color: sugoiPalette.secondary.end,
     fontWeight: 700,
     letterSpacing: 1.5,
     textTransform: 'uppercase',

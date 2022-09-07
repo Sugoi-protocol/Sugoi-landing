@@ -4,11 +4,11 @@ import { useHistory, useLocation } from 'react-router-dom';
 
 import { NavLinks } from './NavLinks';
 import { makeStyles } from '@material-ui/core/styles';
-import { polywrapPalette } from '../theme';
+import { sugoiPalette } from '../theme';
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
-    background: `${polywrapPalette.secondary[900]}c2`,
+    background: `${sugoiPalette.secondary[900]}c2`,
     backdropFilter: 'blur(48px)',
     transition: `background 1s ease-in-out`,
   },
@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
     marginRight: 20,
     transition: 'color 0.25s ease-in-out',
     '&:hover': {
-      color: polywrapPalette.primary.start,
+      color: sugoiPalette.primary.start,
     },
     [theme.breakpoints.down('xs')]: {
       fontSize: '12px',

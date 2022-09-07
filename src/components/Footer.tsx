@@ -2,11 +2,11 @@ import { Box, Container, Grid, Link, Typography } from '@material-ui/core';
 
 import { EmailForm } from './EmailForm';
 import { makeStyles } from '@material-ui/core/styles';
-import { polywrapPalette } from '../theme';
+import { sugoiPalette } from '../theme';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundColor: `${polywrapPalette.secondary[1000]}85`,
+    backgroundColor: `${sugoiPalette.secondary[1000]}85`,
     padding: `${theme.spacing(8)}px ${theme.spacing(5)}px`,
     zIndex: 2,
     position: 'relative',
@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
   cell: {},
   sugoi: {
     width: 'auto',
-    height: '58px',
+    height: '68px',
     cursor: 'pointer',
     transition: 'opacity 0.25s ease-in-out',
     [theme.breakpoints.down('sm')]: {
@@ -93,7 +93,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(3),
     transition: 'color 0.25s ease-in-out',
     '&:hover': {
-      color: polywrapPalette.primary.start,
+      color: sugoiPalette.primary.start,
     },
     [theme.breakpoints.down('xs')]: {
       fontSize: 12,

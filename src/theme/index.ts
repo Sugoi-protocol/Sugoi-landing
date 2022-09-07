@@ -10,7 +10,7 @@ const config: HexToCssConfiguration = {
 const getFilter = (hexColor: string) => hexToCSSFilter(hexColor, config).filter
 
 // **
-// * Polywrap Color Palletes can be handled here, and declared as a palette object with needed configurations.
+// * Sugoi Color Palletes can be handled here, and declared as a palette object with needed configurations.
 // *
 // * Primary Green Gradient:    74DD9F - 27C69F - 120 Degrees
 // * Secondary Blue Gradient :  1B5FED - 1B87ED - 179 Degrees
@@ -20,13 +20,13 @@ const getFilter = (hexColor: string) => hexToCSSFilter(hexColor, config).filter
 // * White Background :         FFFFFF
 // ** 
 
-export const polywrapPalette = {
+export const sugoiPalette = {
   primary: {
-    gradient: 'linear-gradient(to right, #74DD9F 20%, #000000, 20%)',
+    gradient: 'linear-gradient(to right, #8AC294 20%, #000000, 20%)',
     start: '#FAEDDE',
-    mid: '#4ED29F',
-    end: '#27C69F',
-    700: '#06644D',
+    mid: '#96B9D0',
+    end: '#96B9D0',
+    700: '#1B5FED',
     direction: '120deg',
   },
   secondary: {
@@ -35,15 +35,16 @@ export const polywrapPalette = {
     mid: '#1B6DED',
     end: '#1B87ED',
     300: '#66D9EF',
-    800: '#74DD9F',
-    900: '#FFD8CB',
-    1000: '#1d2538',
+    800: '#A4C3D2',
+    900: '#FDE7F7',
+    1000: '#F7C7FE',
+    400: '#1672F9',
     direction: 179,
   },
   terciary: {
-    gradient: 'linear-gradient(to right, #4ED29F, #74DD9F)',
-    400: '#74DD9F',
-    500: '#4ED29F',
+    gradient: 'linear-gradient(to right, #A4C3D2, #96B9D0, #78A2CC)',
+    400: '#96B9D0',
+    500: '#78A2CC',
     direction: 0,
   },
   purple: {
@@ -65,20 +66,20 @@ export const polywrapPalette = {
 export const theme = createMuiTheme({
   palette: {
     primary: {
-      main: polywrapPalette.primary.start,
-      dark: polywrapPalette.primary.end,
+      main: sugoiPalette.primary.start,
+      dark: sugoiPalette.primary.end,
     },
     secondary: {
-      main: polywrapPalette.secondary.end,
-      dark: polywrapPalette.secondary.start,
+      main: sugoiPalette.secondary.end,
+      dark: sugoiPalette.secondary.start,
     },
     text: {
-      primary: polywrapPalette.black,
+      primary: sugoiPalette.black,
       secondary: '#000000',
       disabled: 'rgba(255,255,255,0.3)',
     },
     background: {
-      default: polywrapPalette.secondary['900'],
+      default: sugoiPalette.secondary['900'],
     }
   },
   typography: {
@@ -129,7 +130,7 @@ export const theme = createMuiTheme({
     MuiCssBaseline: {
       '@global': {
         html: {
-          backgroundColor: polywrapPalette.secondary[900],
+          backgroundColor: sugoiPalette.secondary[900],
         },
         body: {
           overflowX: 'hidden',
@@ -143,15 +144,15 @@ export const theme = createMuiTheme({
     },
     MuiInput: {
       root: {
-        background: `${polywrapPalette.secondary[900]}88`,
+        background: `${sugoiPalette.secondary[900]}88`,
         backdropFilter: "blur(8px)",
-        border: `solid 1px ${polywrapPalette.primary[700]}`,
+        border: `solid 1px ${sugoiPalette.primary[700]}`,
         borderRadius: 4,
         fontSize: "1rem",
         fontWeight: 500,
         transition: "background 0.25s ease-in-out",
         "&.Mui-focused": {
-          background: polywrapPalette.secondary[900]
+          background: sugoiPalette.secondary[900]
         },
       },
     },
@@ -173,12 +174,12 @@ export const theme = createMuiTheme({
     },
     MuiButton: {
       containedPrimary: {
-        background: `radial-gradient(circle at 80% 50%, ${polywrapPalette.terciary[400]}, ${polywrapPalette.terciary[500]})`,
+        background: `radial-gradient(circle at 80% 50%, ${sugoiPalette.terciary[400]}, ${sugoiPalette.terciary[500]})`,
         backgroundSize: '250%',
         backgroundPositionX: '0px',
         borderRadius: 999,
-        boxShadow: `0 8px 16px ${polywrapPalette.secondary[900]}`,
-        color: polywrapPalette.secondary['900'],
+        boxShadow: `0 8px 16px ${sugoiPalette.secondary[400]}`,
+        color: sugoiPalette.secondary['900'],
         fontWeight: 700,
         transform: 'translateY(0)',
         transition: 'background 0.25s ease-in-out, transform 0.25s ease-in-out',
@@ -194,7 +195,7 @@ export const theme = createMuiTheme({
     MuiLink: {
       root: {
         '&:hover': {
-          color: polywrapPalette.primary.start
+          color: sugoiPalette.primary.start
         }
       }
     },
@@ -204,8 +205,8 @@ export const theme = createMuiTheme({
 
 export const filters = {
   // sets color of Launch Partners when idle 
-  textSecondary: getFilter(polywrapPalette.wrapGradient.start),
+  textSecondary: getFilter(sugoiPalette.wrapGradient.start),
 
   // sets color for Launch Partners on-hover
-  secondary: getFilter(polywrapPalette.terciary[400]) 
+  secondary: getFilter(sugoiPalette.terciary[400]) 
 };

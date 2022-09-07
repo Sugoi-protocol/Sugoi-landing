@@ -4,7 +4,7 @@ import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
 import KeyboardArrowRightOutlined from '@material-ui/icons/KeyboardArrowRightOutlined';
 import {SignUp} from '../pages/SignUp/'
 import { makeStyles } from '@material-ui/core/styles';
-import { polywrapPalette } from '../theme';
+import { sugoiPalette } from '../theme';
 
 const useStyles = makeStyles((theme) => ({
   navLink: {
@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(6),
     transition: 'color 0.25s ease-in-out',
     '&:hover': {
-      color: polywrapPalette.primary.start,
+      color: sugoiPalette.primary.start,
     },
     [theme.breakpoints.down('xs')]: {
       fontSize: 12,
@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   navButton: {
-    backgroundColor: polywrapPalette.primary.mid,
+    backgroundColor: sugoiPalette.primary.mid,
     borderRadius: 999,
     fontWeight: 700,
     [theme.breakpoints.down('xs')]: {

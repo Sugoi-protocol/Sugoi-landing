@@ -11,7 +11,7 @@ import {
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import KeyboardArrowRightOutlined from '@material-ui/icons/KeyboardArrowRightOutlined';
-import { polywrapPalette } from '../../theme';
+import { sugoiPalette } from '../../theme';
 import { CTA } from '../../constants/verbiage';
 import { DemoSection } from '../../components/DemoSection';
 import { useState } from 'react';
@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
     }
   },
   technicalPreview: {
-    color: polywrapPalette.secondary.end,
+    color: sugoiPalette.secondary.end,
     fontWeight: 700,
     letterSpacing: 1.5,
     textTransform: 'uppercase',
@@ -99,7 +99,7 @@ const useStyles = makeStyles((theme) => ({
   heroSignupSuccess: {
     backgroundColor: theme.palette.primary.dark,
     borderRadius: 8,
-    boxShadow: `0 8px 16px ${polywrapPalette.secondary[900]}88`,
+    boxShadow: `0 8px 16px ${sugoiPalette.secondary[900]}88`,
     fontWeight: 700,
     padding: 8,
     width: '100%',

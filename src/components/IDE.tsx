@@ -2,7 +2,7 @@ import { Box, makeStyles, styled } from '@material-ui/core';
 import Highlight, { defaultProps } from "prism-react-renderer";
 import { useEffect, useState } from "react";
 
-import { polywrapPalette } from '../theme';
+import { sugoiPalette } from '../theme';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
   },
   tabs: {
-    background: polywrapPalette.secondary[900],
+    background: sugoiPalette.secondary[900],
     borderRadius: '8px 8px 0 0',
     overflowX: 'hidden',
   },
@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   main: {
-    background: polywrapPalette.secondary[800],
+    background: sugoiPalette.secondary[800],
     borderRadius: '0 0 8px 8px',
     maxHeight: '400px',
     overflowY: 'scroll',
