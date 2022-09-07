@@ -93,14 +93,7 @@ export const WhatsSugoi = () => {
               color='textSecondary'
               className={classes.description}
             >
-              <b>
-              Sugoi is web3’s first “green savings protocol”
-              </b>{' '}
-              where users can deposit their stablecoins, earn interest,
-              and be able to redirect a percentage of that interest towards Environmental NGOs.
-              <b>{' '}
-              Users are incentivized by social impact, tax deductions and special rewards like NFTs.
-              </b> 
+              Using Sugoi, you can put your stable coins to good use.
             </Typography>
            
           </Grid>
