@@ -31,7 +31,7 @@ export const TESTIMONIALS: Testimonial[] = [
     title: "Which Impact initiatives will we invest in?",
     logo: process.env.PUBLIC_URL + "/logos/Thegivingblock.svg",
     persona: "",
-    description: `We will donate the money to:`,
+    description: `We will donate funds to:`,
     url: "https://thegivingblock.com",
   },
 
