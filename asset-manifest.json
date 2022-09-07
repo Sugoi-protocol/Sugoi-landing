@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Sugoi-landing/static/css/main.a3128ba7.chunk.css",
+    "main.js": "/Sugoi-landing/static/js/main.32525a46.chunk.js",
+    "main.js.map": "/Sugoi-landing/static/js/main.32525a46.chunk.js.map",
+    "runtime-main.js": "/Sugoi-landing/static/js/runtime-main.0a0cbdc8.js",
+    "runtime-main.js.map": "/Sugoi-landing/static/js/runtime-main.0a0cbdc8.js.map",
+    "static/js/2.561b57eb.chunk.js": "/Sugoi-landing/static/js/2.561b57eb.chunk.js",
+    "static/js/2.561b57eb.chunk.js.map": "/Sugoi-landing/static/js/2.561b57eb.chunk.js.map",
+    "index.html": "/Sugoi-landing/index.html",
+    "static/css/main.a3128ba7.chunk.css.map": "/Sugoi-landing/static/css/main.a3128ba7.chunk.css.map",
+    "static/js/2.561b57eb.chunk.js.LICENSE.txt": "/Sugoi-landing/static/js/2.561b57eb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0a0cbdc8.js",
+    "static/js/2.561b57eb.chunk.js",
+    "static/css/main.a3128ba7.chunk.css",
+    "static/js/main.32525a46.chunk.js"
+  ]
+}
