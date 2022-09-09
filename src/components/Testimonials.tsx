@@ -1,5 +1,5 @@
 import { Box, Container, Link, Typography, makeStyles } from '@material-ui/core';
-import { TESTIMONIALS, Testimonial } from '../constants/launch-partners';
+import { TESTIMONIALS, TESTIMONIALS2, Testimonial, Testimonial2 } from '../constants/launch-partners';
 
 import FormatQuoteIcon from '@material-ui/icons/FormatQuote';
 import { filters } from '../theme';
@@ -91,14 +91,23 @@ export const Testimonials = () => {
                   <Typography variant='body1' style={{ fontSize: 20}} color='textSecondary'>
                     {testimonial.description}
                   </Typography>
+                </Box>
+              </Box>
+          )}
+          {TESTIMONIALS2.map(
+            (testimonial2: Testimonial2, index: number) =>
+              <Box className={classes.testimonial} key={`testimonial2-${index}`}>
+                <Box>
+                  <Typography variant="subtitle1" style={{fontSize: 30}} color="textPrimary">
+                    {testimonial2.title}
+                  </Typography>
+                   
+                  <Typography variant='body1' style={{ fontSize: 20}} color='textSecondary'>
+                    {testimonial2.description}
+                  </Typography>
                   <Box marginTop={2}>
-                    <Typography variant='body1' color='textSecondary'>
-                      {testimonial.persona}
-                    </Typography>
-                  </Box>
-                  <Box marginTop={2}>
-                    <Link href={testimonial.url} target='_blank'>
-                      <img src={testimonial.logo} className={classes.logo} alt=""/>
+                    <Link href={testimonial2.url} target='_blank'>
+                      <img src={testimonial2.logo} className={classes.logo} alt=""/>
                     </Link>
                   </Box>
                 </Box>

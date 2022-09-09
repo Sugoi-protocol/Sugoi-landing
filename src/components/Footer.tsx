@@ -168,7 +168,7 @@ export const Footer = () => {
                     </Link>
                     <Link
                       className={`${classes.navLink} ${classes.footerLink}`}
-                      href='https://t.me/+cPJt7wguLBYxOTYx'
+                      href='https://t.me/+qYG1y9AEFagzYzcx'
                       target='_blank'
                       color='textPrimary'
                       variant='body1'

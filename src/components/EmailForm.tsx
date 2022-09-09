@@ -140,7 +140,7 @@ export const EmailForm = ({location}: EmailFormProps) => {
                   <Box marginRight={1} display="flex">
                     <ArrowBackOutlinedIcon />
                   </Box>
-                  Go Back to Polywrap
+                  Go Back to Sugoi
                 </Box>
               </Link>
             ) : null}

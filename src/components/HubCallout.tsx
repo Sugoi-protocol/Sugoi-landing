@@ -1,5 +1,6 @@
+import { Box, Grid, Typography, makeStyles, useMediaQuery, useTheme } from '@material-ui/core';
+
 import { Parallax } from 'react-scroll-parallax';
-import { Box, Grid, makeStyles, Typography, useMediaQuery, useTheme } from '@material-ui/core';
 import { sugoiPalette } from '../theme';
 
 const useStyles = makeStyles((theme) => ({
@@ -66,14 +67,14 @@ export const HubCallout = () => {
       <Box className={classes.cell}>
         <Box className={classes.blurredGraphicContainer}>
           <Parallax y={[-15, 10]} disabled={isMobile}>
-            <img src={process.env.PUBLIC_URL + '/imgs/polywrapper-callout-spot.png'} alt='polywrap blurred'/>
+            <img src={process.env.PUBLIC_URL + '/imgs/polywrapper-callout-spot.png'} alt='sugoi blurred'/>
           </Parallax>
         </Box>
         <Box className={classes.container}>
           <Grid container spacing={isMobile ? 6 : 10} alignItems='stretch' >
             <Grid item xs={12} sm={6}>
               <Typography variant="h3">
-                Welcome to the Polywrap Hub...
+                Welcome to the Sugoi Hub...
               </Typography>
               <Box marginTop={2}>
                 <Typography variant="body1">

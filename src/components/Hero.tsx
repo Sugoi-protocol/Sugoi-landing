@@ -34,10 +34,10 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     justifyContent: 'center',
     objectFit: 'cover',
-    height: 'auto',
+    height: '100%',
     width: '100%',
     [theme.breakpoints.down('md')]: {
-      aspectRatio: '3/2',
+      aspectRatio: '2/2',
       maxWidth: '60vw',
       margin: '80px auto 20px',
     },
@@ -219,7 +219,7 @@ export const Hero = () => {
           display='flex'
           flexDirection='column'
           justifyContent='center'
-          width='100%'
+          width='100%0'
           height='100%'
         >
           <Parallax

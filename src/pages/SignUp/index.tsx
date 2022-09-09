@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
     height: 'auto',
     width: '100%',
     [theme.breakpoints.down('md')]: {
-      aspectRatio: '3/2',
+      aspectRatio: '2/2',
       maxWidth: '60vw',
       margin: '80px auto 20px',
     },
@@ -91,7 +91,7 @@ const useStyles = makeStyles((theme) => ({
     }
   },
   heroIllustration: {
-    animation: `$float 6s infinite`,
+    animation: `$float 2s infinite`,
     [theme.breakpoints.down('sm')]: {
       order: -1
     }
@@ -118,7 +118,7 @@ export const SignUp = () => {
             <br/>
             Sign up today for your chance to try it out early and help us improve.
           </Typography>
-          <Box marginTop={4}>
+          <Box marginTop={4} marginBottom={10}>
             <EmailForm location="signup"/>
           </Box>
           {/**

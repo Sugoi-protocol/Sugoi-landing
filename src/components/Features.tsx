@@ -102,7 +102,7 @@ export const Features = () => {
     <Box display='flex' alignItems='center' className={classes.root}>
       <Box className={classes.blurredPoly}>
         <Parallax y={[-90,100]} disabled={window.innerWidth < theme.breakpoints.values.md}>
-          <img width="100%" src={`${process.env.PUBLIC_URL}/imgs/polywrapper-hero-blurred.png`} alt='Polywrap' />
+          <img width="600px" src={`${process.env.PUBLIC_URL}/imgs/polywrapper-hero-blurred.png`} alt='Polywrap' />
         </Parallax>
       </Box>
       <Parallax y={[-5,5]} disabled={window.innerWidth < theme.breakpoints.values.md}>

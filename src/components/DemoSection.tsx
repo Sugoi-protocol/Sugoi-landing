@@ -1,4 +1,4 @@
-import { Box, Grid, Typography, makeStyles, useTheme } from '@material-ui/core';
+import { Box, Grid, Link, Typography, makeStyles, useTheme } from '@material-ui/core';
 
 import { Parallax } from 'react-scroll-parallax';
 
@@ -10,8 +10,9 @@ const useStyles = makeStyles((theme) => ({
     paddingRight: 20,
     zIndex: 2,
     [theme.breakpoints.down('md')]: {
-      marginTop: 150,
+      marginTop: 100,
       minHeight: '60vh',
+      marginBottom: 10,
     },
   },
   grid: {
@@ -38,6 +39,8 @@ const useStyles = makeStyles((theme) => ({
   },
   description: {
     marginTop: 20,
+    marginBottom: 20,
+  
   },
   polywrapIllustration: {
     width: '100%',
@@ -57,7 +60,7 @@ export const DemoSection = () => {
   return (
     <Box position='relative' className={classes.root}>
       <Parallax
-        y={[20, -35]}
+        y={[10, -15]}
         disabled={window.innerWidth < theme.breakpoints.values.md}
       >
         <Grid
@@ -85,13 +88,14 @@ export const DemoSection = () => {
               variant='body1'
               color='textSecondary'
               className={classes.description}
+              
             >
               We plan to launch the product by {' '}
                <b>
                January 2023.
               </b>{' '} You can join our {' '}
               <b>
-              waitlist or telegram
+              waitlist or <Link color="textSecondary" href="https://t.me/+qYG1y9AEFagzYzcx" target="_blank">Telegram</Link>
               </b>{' '}
               to keep updated.
             </Typography>
