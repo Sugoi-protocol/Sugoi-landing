@@ -37,7 +37,7 @@ export const sugoiPalette = {
     300: '#66D9EF',
     800: '#A4C3D2',
     900: '#FDE7F7',
-    1000: '#F7C7FE',
+    1000: '#FDE7F7',
     400: '#1672F9',
     direction: 179,
   },

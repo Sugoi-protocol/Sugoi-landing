@@ -11,10 +11,12 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    
     maxWidth: '1400px',
     position: 'relative',
     [theme.breakpoints.up('sm')]: {
-      margin: 'auto',
+      marginLeft: 'auto',
+      marginRight: 'auto',
     },
   },
 }));
