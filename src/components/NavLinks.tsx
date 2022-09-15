@@ -46,18 +46,22 @@ export const NavLinks = (props: NavLinkProps) => {
 
   return (
     <Box display='flex' alignItems='center' flexWrap='nowrap'>
-       <Link to="/SignUp">
+       <Link to="/SignUp"
+       >
           <Button
               href='/SignUp'
               target="_blank"
               rel="noredirect"
               variant='contained'
+             
               endIcon={<KeyboardArrowRightOutlined />}
               className={classes.navButton}
               style={{ display: `${showButton ? 'flex' : 'none'}` }}
           >
                Sign Up
+               
           </Button>
+          
       </Link>
     </Box>
   );

@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
   },
   blurredPoly1: {
     filter: "blur(45px)",
-    transform: "scale(1.01) translate(0%, 55%) rotate(0deg)",
+    transform: "scale(1.01) translate(-2%, 55%) rotate(0deg)",
     opacity: "0.80",
   },
   blurredPoly2: {
