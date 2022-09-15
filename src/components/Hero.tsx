@@ -200,8 +200,8 @@ export const Hero = () => {
               color='textSecondary'
               variant='body1'
             >
-              Sugoi is Web3's first green savings protocol where you can earn
-              Sustainable yield and make green impact both at the same time.
+              Web3's first green savings protocol where you can earn
+              and impact together.
               
             </Typography>
             </Box>
