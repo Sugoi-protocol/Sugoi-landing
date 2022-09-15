@@ -7,6 +7,16 @@ const useStyles = makeStyles((theme) => ({
   root: {
     overflowX: 'hidden',
   },
+   '@keyframes float': {
+    '0%, 100%': {
+      transform: 'translateY(0)',
+      transitionTimingFunction: 'ease-in',
+    },
+    '50%': {
+      transform: 'translateY(-3%)',
+      transitionTimingFunction: 'ease-out',
+    },
+  },
   bgMembrane: {
     height: 'auto',
     position: 'absolute',
@@ -21,14 +31,14 @@ const useStyles = makeStyles((theme) => ({
     mixBlendMode: "hard-light",
   },
   blurredPoly1: {
-    filter: "blur(20px)",
-    transform: "scale(2) translate(5%, 35%) rotate(125deg)",
-    opacity: "0.70",
+    filter: "blur(45px)",
+    transform: "scale(1.01) translate(-2%, 55%) rotate(0deg)",
+    opacity: "0.80",
   },
   blurredPoly2: {
     filter: "blur(35px)",
-    transform: "scale(0.5) rotate(-75deg)",
-    opacity: "0.3",
+    transform: "scale(1) translate(-15%, 0%) rotate(280deg)",
+    opacity: "0.8",
     [theme.breakpoints.between('xs','md')]: {
       left: "44%",
       top: "7%",
@@ -76,12 +86,12 @@ export const MembraneBg = () => {
           <div key={`membrane-${i}`}>
             {i === 4 && (
               <Box display="flex">
-                <img className={`${classes.blurredPoly} ${classes.blurredPoly1}`} src={`${process.env.PUBLIC_URL}/imgs/polywrapper-hero-blurred.png`} alt="Polywrap" />
+                <img className={`${classes.blurredPoly} ${classes.blurredPoly1}`} src={`${process.env.PUBLIC_URL}/imgs/gradients/01.png`} alt="Bg" />
                 <Parallax y={[0, -50]} styleOuter={parallaxStyles} styleInner={{"mixBlendMode": "hard-light"}}>
-                  <img className={`${classes.blurredPoly} ${classes.blurredPoly2}`} src={`${process.env.PUBLIC_URL}/imgs/polywrapper-hero-blurred.png`} alt="Polywrap" />
+                  <img className={`${classes.blurredPoly} ${classes.blurredPoly2}`} src={`${process.env.PUBLIC_URL}/imgs/gradients/01.png`} alt="Bg" />
                 </Parallax>
                 <Parallax y={[-25, 25]} styleOuter={parallaxStyles}>
-                  <img className={`${classes.blurredPoly} ${classes.blurredPoly3}`} src={`${process.env.PUBLIC_URL}/imgs/polywrapper-hero-blurred.png`} alt="Polywrap" />
+                  <img className={`${classes.blurredPoly} ${classes.blurredPoly3}`} src={`${process.env.PUBLIC_URL}/imgs/gradients/01.png`} alt="Bg" />
                 </Parallax>
               </Box>
             )}

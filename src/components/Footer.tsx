@@ -125,12 +125,15 @@ export const Footer = () => {
       <Container className={classes.cell}>
         <Grid container justify='space-between' spacing={6}>
           <Grid item xs={12} md={7}>
+            <Link
+            href={'/'}>
             <img
               
               src={process.env.PUBLIC_URL + '/logos/sugoi-horizontal.svg'}
               alt='Sugoi Logo'
               className={classes.sugoi}
             />
+            </Link>
             <Box marginTop={3}>
               <Grid container spacing={4}>
                 

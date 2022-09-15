@@ -16,7 +16,10 @@ import { sugoiPalette } from '../theme';
 const useStyles = makeStyles((theme) => ({
   root: {
     minHeight: '100vh',
-    margin: 'auto',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    marginTop: 'auto',
+    marginBottom: '-10px',
     maxWidth: theme.breakpoints.values.lg,
     paddingLeft: theme.spacing(3),
     [theme.breakpoints.down('sm')]: {
