@@ -22,10 +22,10 @@
     2.  Log into Firebase using your Google account by running the following command:
         `firebase login`
         3.To initialize a new Firebase project, run the following command from within your app's directory:
-        `firebase init` --> 1. Are you ready to proceed? (Y/n) -Y, 2. ? Which Firebase features do you want to set up for this directory? Press Space to select features, then Enter to confirm your choices. (Press <space> to select, <a> to toggle all, <i> to invert selection, and <enter> to proceed) >( ) Realtime Database: Configure a security rules file for Realtime Database and (optionally) provision default instance
+        `firebase init` --> 1. Are you ready to proceed? (Y/n) -Y, 2. ? Which Firebase features do you want to set up for this directory? Press Space to select features, then Enter to confirm your choices. (Press space to select, a to toggle all, i to invert selection, and enter to proceed) >( ) Realtime Database: Configure a security rules file for Realtime Database and (optionally) provision default instance
         ( ) Firestore: Configure security rules and indexes files for Firestore
         ( ) Functions: Configure a Cloud Functions directory and its files
-        ( Choose this one with arrow key and then press <space> and then <Enter>) Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys
+        ( Choose this one with arrow key and then press space and then Enter) Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys
         ( ) Hosting: Set up GitHub Action deploys
         ( ) Storage: Configure a security rules file for Cloud Storage
         ( ) Emulators: Set up local emulators for Firebase products
